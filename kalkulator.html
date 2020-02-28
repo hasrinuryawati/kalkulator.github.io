@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator</title>
+	<script type="text/javascript">
+		function tambah () {
+			var input1=eval(document.getElementById('inp1').value);
+			var input2=eval(document.getElementById('inp2').value);
+			var input3=eval(document.getElementById('inp3').value);
+			var hasil;
+			var tolcek1=document.getElementById('cek1');
+			var tolcek2=document.getElementById('cek2');
+			var tolcek3=document.getElementById('cek3');
+			if (tolcek1.checked==true && (tolcek2.checked==false && tolcek3.checked==false)){
+				document.getElementById('calloutput').innerHTML="error!";
+			}else if(tolcek2.checked==true && (tolcek1.checked==false && tolcek3.checked==false)){
+				document.getElementById('calloutput').innerHTML="error!";
+			}else if(tolcek3.checked==true && (tolcek2.checked==false && tolcek1.checked==false)){
+				document.getElementById('calloutput').innerHTML="error!"; 
+			}else if (tolcek1.checked==true && tolcek2.checked==true && tolcek3.checked==true) {
+				hasil=input1+input2+input3;
+				document.getElementById('calloutput').innerHTML=hasil;
+			}else if(tolcek1.checked==true && tolcek2.checked==true){
+				hasil=input1+input2;
+				document.getElementById('calloutput').innerHTML=hasil;
+			}else if (tolcek1.checked==true && tolcek3.checked==true){
+				hasil=input1+input3;
+				document.getElementById('calloutput').innerHTML=hasil;
+			}else if(tolcek2.checked==true && tolcek3.checked==true){
+				hasil=input2+input3;
+				document.getElementById('calloutput').innerHTML=hasil;
+			}else{
+				document.getElementById('calloutput').innerHTML="Input yang benar!"
+			};
+		}
+
+		function kurang () {
+			var input1=eval(document.getElementById('inp1').value);
+			var input2=eval(document.getElementById('inp2').value);
+			var input3=eval(document.getElementById('inp3').value);
+			var hasil;
+			var tolcek1=document.getElementById('cek1');
+			var tolcek2=document.getElementById('cek2');
+			var tolcek3=document.getElementById('cek3');
+			if (tolcek1.checked==true && (tolcek2.checked==false && tolcek3.checked==false)){
+				document.getElementById('calloutput').innerHTML="error!";
+			}else if(tolcek2.checked==true && (tolcek1.checked==false && tolcek3.checked==false)){
+				document.getElementById('calloutput').innerHTML="error!";
+			}else if(tolcek3.checked==true && (tolcek2.checked==false && tolcek1.checked==false)){
+				document.getElementById('calloutput').innerHTML="error!";
+			}else if (tolcek1.checked==true && tolcek2.checked==true && tolcek3.checked==true) {
+				hasil=input1-input2-input3;
+				document.getElementById('calloutput').innerHTML=hasil;
+			}else if(tolcek1.checked==true && tolcek2.checked==true){
+				hasil=input1-input2;
+				document.getElementById('calloutput').innerHTML=hasil;
+			}else if (tolcek1.checked==true && tolcek3.checked==true){
+				hasil=input1-input3;
+				document.getElementById('calloutput').innerHTML=hasil;
+			}else if(tolcek2.checked==true && tolcek3.checked==true){
+				hasil=input2-input3;
+				document.getElementById('calloutput').innerHTML=hasil;
+			}else{
+				document.getElementById('calloutput').innerHTML="Input yang benar!"
+			};
+		}
+		function kali () {
+			var input1=eval(document.getElementById('inp1').value);
+			var input2=eval(document.getElementById('inp2').value);
+			var input3=eval(document.getElementById('inp3').value);
+			var hasil;
+			var tolcek1=document.getElementById('cek1');
+			var tolcek2=document.getElementById('cek2');
+			var tolcek3=document.getElementById('cek3');
+			if (tolcek1.checked==true && (tolcek2.checked==false && tolcek3.checked==false)){
+				document.getElementById('calloutput').innerHTML="error!";
+			}else if(tolcek2.checked==true && (tolcek1.checked==false && tolcek3.checked==false)){
+				document.getElementById('calloutput').innerHTML="error!";
+			}else if(tolcek3.checked==true && (tolcek2.checked==false && tolcek1.checked==false)){
+				document.getElementById('calloutput').innerHTML="error!";
+			}else if (tolcek1.checked==true && tolcek2.checked==true && tolcek3.checked==true) {
+				hasil=input1*input2*input3;
+				document.getElementById('calloutput').innerHTML=hasil;
+			}else if(tolcek1.checked==true && tolcek2.checked==true){
+				hasil=input1*input2;
+				document.getElementById('calloutput').innerHTML=hasil;
+			}else if (tolcek1.checked==true && tolcek3.checked==true){
+				hasil=input1*input3;
+				document.getElementById('calloutput').innerHTML=hasil;
+			}else if(tolcek2.checked==true && tolcek3.checked==true){
+				hasil=input2*input3;
+				document.getElementById('calloutput').innerHTML=hasil;
+			}else{
+				document.getElementById('calloutput').innerHTML="Input yang benar!"
+			};
+		}
+
+		function bagi () {
+			var input1=eval(document.getElementById('inp1').value);
+			var input2=eval(document.getElementById('inp2').value);
+			var input3=eval(document.getElementById('inp3').value);
+			var hasil;
+			var tolcek1=document.getElementById('cek1');
+			var tolcek2=document.getElementById('cek2');
+			var tolcek3=document.getElementById('cek3');
+			if (tolcek1.checked==true && (tolcek2.checked==false && tolcek3.checked==false)){
+				document.getElementById('calloutput').innerHTML="error!";
+			}else if(tolcek2.checked==true && (tolcek1.checked==false && tolcek3.checked==false)){
+				document.getElementById('calloutput').innerHTML="error!";
+			}else if(tolcek3.checked==true && (tolcek2.checked==false && tolcek1.checked==false)){
+				document.getElementById('calloutput').innerHTML="error!";
+			}else if (tolcek1.checked==true && tolcek2.checked==true && tolcek3.checked==true) {
+				hasil=input1/input2/input3;
+				document.getElementById('calloutput').innerHTML=hasil;
+			}else if(tolcek1.checked==true && tolcek2.checked==true){
+				hasil=input1/input2;
+				document.getElementById('calloutput').innerHTML=hasil;
+			}else if (tolcek1.checked==true && tolcek3.checked==true){
+				hasil=input1/input3;
+				document.getElementById('calloutput').innerHTML=hasil;
+			}else if(tolcek2.checked==true && tolcek3.checked==true){
+				hasil=input2/input3;
+				document.getElementById('calloutput').innerHTML=hasil;
+			}else{
+				document.getElementById('calloutput').innerHTML="Input yang benar!"
+			};
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<table>
+			<tr>
+				<td><input type="text" id="inp1"></td>
+				<td><input type="checkbox" id="cek1"></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="inp2"></td>
+				<td><input type="checkbox" id="cek2"></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="inp3"></td>
+				<td><input type="checkbox" id="cek3"></td>
+			</tr>	
+			<tr>
+				<td align="center">
+					<button onclick="tambah()">+</button>&emsp;
+					<button onclick="kurang()">-</button>&emsp;
+					<button onclick="kali()">x</button>&emsp;
+					<button onclick="bagi()">/</button><br>
+					<hr>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Hasil : &nbsp;</label>
+					<label id="calloutput"></label>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
